@@ -115,6 +115,7 @@ foreach ($handlerregistry->get_resource_handlers_for_strategy($importinfo->get_r
 $context = [
     'resourcename' => $importinfo->get_resource()->get_name(),
     'resourceurl' => urlencode($importinfo->get_resource()->get_url()->get_value()),
+    'resourcetype' => $importinfo->get_config()->type,
     'course' => $course->id,
     'section' => $config->section,
     'sesskey' => sesskey(),

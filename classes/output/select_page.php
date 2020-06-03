@@ -70,6 +70,7 @@ class select_page implements \renderable, \templatable {
         return (object) [
             'name' => $this->importinfo->get_resource()->get_name(),
             'cancellink' => new \moodle_url('/my'),
+            'type' => $this->importinfo->get_config()->type,
         ];
     }
 }
