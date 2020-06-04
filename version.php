@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 $plugin->component  = 'tool_moodlenet';
 $plugin->version    = 2020030501;        // IMPORTANT! do not update this version number to be greater than the 3.9 version.
 $plugin->requires   = 2019052006.01;
-$plugin->maturity   = MATURITY_ALPHA;
+$plugin->maturity = MATURITY_STABLE;
+$plugin->release = '1.0 (Build: 2020030501)';
 $plugin->dependencies = ['profilefield_text' => ANY_VERSION];
