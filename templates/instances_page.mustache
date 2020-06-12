@@ -15,14 +15,14 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 <div data-region="moodle-net">
-    <div class="overlay-icon-container d-none  z-index-1" data-region="spinner"></div>
+    <div class="overlay-icon-container d-none z-index-1" data-region="spinner"></div>
     <img class="w-25 mb-4" aria-hidden="true" src="{{{img}}}">
     <p>{{#str}} instancedescription, tool_moodlenet {{/str}}</p>
     <p class="w-50 mx-auto mt-5 mb-1">{{#str}} connectandbrowse, tool_moodlenet {{/str}}</p>
     <button class="btn btn-secondary d-block w-50 mx-auto mb-4 mb-3"
             data-action="browse"
     >
-        {{#str}} browsemoodlenet, tool_moodlenet {{/str}}
+        {{{buttonName}}}
     </button>
     <div id="mnet-instance-form-{{uniqid}}" data-region="mnet-form">
         <input type="hidden" name="sesskey" value="{{sesskey}}">
@@ -46,7 +46,7 @@
                     </button>
                 </div>
             </div>
-            <p class="text-left" data-region="validation-area"></p>
+            <p class="text-left" aria-live="assertive" data-region="validation-area"></p>
             <p class="text-left">{{#str}} forminfo, tool_moodlenet {{/str}}</p>
         </div>
     </div>

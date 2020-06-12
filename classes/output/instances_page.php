@@ -82,6 +82,7 @@ class instances_page implements \renderable, \templatable {
         $data->mnetlink = $this->defaultlink;
         $data->course = $this->course;
         $data->section = $this->section;
+        $data->buttonName = get_config('tool_moodlenet', 'defaultmoodlenetname');
 
         return $data;
     }
